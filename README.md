@@ -3,10 +3,10 @@
 > Validate, coerce, and **type** your environment variables — fail fast with one clear report. **Zero dependencies**, full TypeScript inference.
 
 [![CI](https://github.com/trananhtung/envguard/actions/workflows/ci.yml/badge.svg)](https://github.com/trananhtung/envguard/actions/workflows/ci.yml)
-[![npm version](https://img.shields.io/npm/v/envguard.svg)](https://www.npmjs.com/package/envguard)
-[![bundle size](https://img.shields.io/bundlephobia/minzip/envguard)](https://bundlephobia.com/package/envguard)
-[![types](https://img.shields.io/npm/types/envguard.svg)](https://www.npmjs.com/package/envguard)
-[![license](https://img.shields.io/npm/l/envguard.svg)](./LICENSE)
+[![npm version](https://img.shields.io/npm/v/@billdaddy/envguard.svg)](https://www.npmjs.com/package/@billdaddy/envguard)
+[![bundle size](https://img.shields.io/bundlephobia/minzip/@billdaddy/envguard)](https://bundlephobia.com/package/@billdaddy/envguard)
+[![types](https://img.shields.io/npm/types/@billdaddy/envguard.svg)](https://www.npmjs.com/package/@billdaddy/envguard)
+[![license](https://img.shields.io/npm/l/@billdaddy/envguard.svg)](./LICENSE)
 
 `process.env` is `string | undefined` — every value, every time. So `PORT` is a
 string, a missing `DATABASE_URL` is `undefined` you discover at 3 a.m., and a
@@ -54,9 +54,14 @@ EnvError: Invalid environment configuration:
 ## Install
 
 ```bash
-npm install envguard
-# or: pnpm add envguard  /  yarn add envguard  /  bun add envguard
+npm install @billdaddy/envguard
+# or: pnpm add @billdaddy/envguard  /  yarn add @billdaddy/envguard
 ```
+
+> Published as the scoped package `@billdaddy/envguard`. Import as:
+> ```ts
+> import { parseEnv, str, port } from "@billdaddy/envguard";
+> ```
 
 ## Validators
 

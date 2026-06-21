@@ -1,5 +1,5 @@
 {
-  "name": "envguard",
+  "name": "@billdaddy/envguard",
   "version": "0.1.0",
   "description": "Validate, coerce, and type your environment variables — fail fast with one clear report. Zero dependencies, full TypeScript inference.",
   "keywords": [
