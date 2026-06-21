@@ -1,0 +1,68 @@
+{
+  "name": "envguard",
+  "version": "0.1.0",
+  "description": "Validate, coerce, and type your environment variables — fail fast with one clear report. Zero dependencies, full TypeScript inference.",
+  "keywords": [
+    "env",
+    "environment",
+    "dotenv",
+    "config",
+    "validation",
+    "typescript",
+    "type-safe",
+    "12-factor",
+    "envalid",
+    "process-env",
+    "zero-dependency"
+  ],
+  "license": "MIT",
+  "author": "Tung Tran (https://github.com/trananhtung)",
+  "homepage": "https://github.com/trananhtung/envguard#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/trananhtung/envguard.git"
+  },
+  "bugs": {
+    "url": "https://github.com/trananhtung/envguard/issues"
+  },
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "bin": {
+    "envguard": "./dist/cli.js"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "typecheck": "tsc --noEmit",
+    "prepublishOnly": "npm run build"
+  },
+  "devDependencies": {
+    "@types/node": "^20.17.10",
+    "tsup": "^8.3.5",
+    "typescript": "^5.7.2",
+    "vitest": "^2.1.8"
+  },
+  "sideEffects": false,
+  "publishConfig": {
+    "access": "public"
+  }
+}
